@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.h11{
+    color: #ff6d39;
+    font-family: "muli";
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 21px;
+    display: inline-block;
+  }
+  
+  i.fa.fa-search {
+    margin-left: 90px;
+  }
+  
+  .product-name i {
+    color: #ffffff;
+    transition: 0.3s all ease;
+    margin: 0px 12px;
+  }
+  
+  .product-name i:hover {
+    color: #ff6d39;
+    cursor: pointer;
+  }
+  
+  .h33 {
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 84px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .h22 {
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 29px;
+  }
+  
+  .h44 {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  h4.dis {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "muli";
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 30px;
+    text-decoration: line-through #ea3201;
+  }
+  
+  h4.dis span {
+    text-decoration: line-through #ea3201;
+  }
+  
+  .discount {
+    display: inline-block;
+  }
+  
+  .ull {
+    list-style-type: none;
+  }
+  
+  .lii {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  .ull .lii {
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 11px;
+  }
+  
+  .bgg {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 2px;
+    margin-right: 20px;
+    transition: 0.3s all ease;
+    border-radius: 50%;
+  }
+  
+  .bgg:hover {
+    background-color: #ff6d39;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .yellow {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #fec60f;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+  }
+  
+  .black {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+  }
+  
+  .blue {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #02a2ca;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+  }
+  
+  .yellow:hover,
+  .black:hover,
+  .blue:hover {
+    border: 2px solid #f76b39;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .foot {
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 20px;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 11px;
+    
+    transition: 0.3s all ease;
+  }
+  
+  .foot i:nth-child(1) {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  
+  .foot:hover {
+    color: #f76b39;
+    cursor: pointer;
+  }
+  
+  /*shoe slider indicator*/
+  
+  .left i {
+    color: #ffd5c6;
+    margin-top: 260px;
+    transition: 0.3s all ease;
+  }
+  
+  .fa-long-arrow-left {
+    margin-left: -275px;
+  }
+  
+  .img11{
+      max-width: 68%;
+    
+  }
+  .fa-long-arrow-right {
+    margin-left: 15px;
+  }
+  
+  .left i:hover {
+    cursor: pointer;
+    color: #2a2f40;
+  }
+  
+  /*main card*/
+  
+  
+  .left {
+    content: "";
+
+    display: flex;
+    align-items: center;
+   
+    margin-left: 60px;
+    border-radius: 0% 50% 50% 0%;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  .left img {
+    margin-left: 150px;
+    margin-top: 60px;
+}
+  
+  .right {
+    content: "";
+    height: 395px;
+    width: 550px;
+    
+    z-index: 3;
+    margin-left: 200px;
+  }
+  
+  .product-info {
+    position: absolute;
+    margin-left: 245px;
+    height: 394px;
+    width: 305px;
+    z-index: 10;
+  }
+  

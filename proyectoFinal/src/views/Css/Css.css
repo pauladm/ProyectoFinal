@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+*
+
+  {box-sizing: border-box;}
+
+body {
+background-image: url("../imagenes/lifeneon.jpg") !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  width: 100%;
+  font-family: 'Fira Sans', sans-serif;}
+.zeta{
+  z-index:3 
+}
+  .footer {
+    background-color: black;
+    display: flex;
+    display: block;
+  
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+ 
+  }
+  .footerText{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+  }
+  .info-wrapp {
+    width: 6px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+  .contact-wrap {
+    background:rgba(255,255,255,0.5);
+    
+    border-radius: 10px;
+  }
+  .form-group {
+    margin-bottom: 5px;
+ 
+}
+
+.Login2{
+  
+  width: 100%;
+  min-height: 102vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;}
+
+.acordeon{
+  
+  background-size: 80%;
+  background-position: center;
+  display:block;
+  width: 100% !important;
+  justify-content:center ;
+  border: #000;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6,label,span 
+ { font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;}
+
+
+body, html, .App, #root, .auth-wrapper 
+{  width: 100%;
+  height: 100%;
+}
+
+.navbar-light 
+{  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);}
+
+
+.auth-wrapper 
+{  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+
+}
+.fotoc{
+  min-width:160% ;
+
+  
+}
+.carousel1{
+min-width: 100% ;
+min-height: 200px!important;
+  
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+
+}
+.car{
+  padding-top: 6.5rem!important;
+  padding-bottom: 1.5rem!important;
+}
+.giff{
+  width: 54% !important;
+}
+
+.home{
+ 
+background-size: 100%;
+background-position: center;
+  min-height: 100vh;
+  
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+
+}
+.auth-inner 
+  {width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+
+}
+.auth-wrapper .form-control:focus 
+ { border-color: #167bff;
+  box-shadow: none;}
+
+
+.auth-wrapper h3 
+{  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label 
+{  font-weight: 400;}
+
+
+.forgot-password,
+.forgot-password a 
+  {text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;}
+
+
+.forgot-password a 
+{  color: #167bff;}
+#infoContent{
+  -webkit-text-size-adjust: none!important;
+  color: #000;
+  --pr-shadow: 0 0 transparent;
+  --pr-ring-inset: var(--pr-empty,/*!*/ /*!*/);
+  --pr-ring-offset-width: 0px;
+  --pr-ring-offset-color: #fff;
+  --pr-ring-color: rgba(59,130,246,0.5);
+  --pr-ring-offset-shadow: 0 0 transparent;
+  --pr-ring-shadow: 0 0 transparent;
+  outline: none;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  box-sizing: border-box;
+  font-family: Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  padding: 0;}
+  
+
+  #chrome-app-container {
+    flex: 1 0 auto;
+
+    display: block;
+
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    
+}
+
+/*Datos de Home*/
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.marco {
+  margin: 0;
+  width: 0;
+}
+footer p {
+  margin-bottom: .25rem;
+}
+.milistafot:hover{
+
+  transform: scale(3.3);
+}
+
+.carruself{
+  color: red;
+ font-size: 30px;
+  font-family: 'Tapestry', cursive;
+}
+
+.milistafot{
+  transition: transform 300ms;
+  
+  width: 20px;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
