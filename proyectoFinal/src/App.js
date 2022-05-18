@@ -1,57 +1,57 @@
 import { Routes, Route } from "react-router-dom";
 import Layaout from "./components/Layout";
-import Home from "./views/Home";
+import Inicio from "./views/Inicio";
 import Error from "./views/Error";
 
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import Ajustes from "./views/Ajustes";
-import Login2 from "./views/Login2";
-import Paginacion from "./components/paginacion/Paginacion";
+import Iniciar from "./views/Iniciar";
+import Paginacion from "./components/Paginacion/Paginacion";
 import Registro from "./views/Registro";
 import Datos from "./components/Datos/Datos";
 
-import About from "./views/About";
+import SobreNosotros from "./views/SobreNosotros";
 import Preguntas from "./views/Preguntas";
 import Contacto from "./views/Contacto";
 import ProductosMarcas from "./views/ProductosMarcas";
 import Producto from "./views/Producto";
-import Parati from "./views/Parati";
+import ParaTi from "./views/ParaTi";
 import Carrito from "./views/Carrito";
 import Comprar from "./views/Comprar";
-import Compraunica from "./views/compraunica";
+import CompraUnica from "./views/CompraUnica";
 import Perfil from "./views/Perfil";
 import Editar from "./views/Editar";
-import Milista from "./views/Milista";
+import MiLista from "./views/MiLista";
 function App() {
   return (
     <Routes>
       {/*public routes */}
 
       <Route path="/" element={<Layaout />}>
-        <Route path="home" element={<Home />} />
+        <Route path="Inicio" element={<Inicio />} />
 
-        <Route path="login2" element={<Login2 />} />
-        <Route path="paginacion" element={<Paginacion />} />
+        <Route path="Iniciar" element={<Iniciar />} />
+        <Route path="Paginacion" element={<Paginacion />} />
         <Route path="registro" element={<Registro />} />
         <Route path="datos" element={<Datos />} />
         <Route path="preguntas" element={<Preguntas />} />
         <Route path="contacto" element={<Contacto />} />
 
-        <Route path="about" element={<About />} />
+        <Route path="SobreNosotros" element={<SobreNosotros />} />
 
         <Route path="*" element={<Error />} />
         <Route path="productos/:id" element={<ProductosMarcas />} />
         <Route path="producto/:id" element={<Producto />} />
-        <Route path="para-ti" element={<Parati />} />
+        <Route path="para-ti" element={<ParaTi />} />
         <Route element={<RequireAuth />}>
-          <Route index element={<Home />} />
-          <Route path="paginacion" element={<Paginacion />} />
+          <Route index element={<Inicio />} />
+          <Route path="Paginacion" element={<Paginacion />} />
           <Route path="ajustes" element={<Ajustes />} />
           <Route path="comprar" element={<Comprar />} />
           <Route path="carrito" element={<Carrito />} />
-          <Route path="compraunica/:id" element={<Compraunica />} />
+          <Route path="CompraUnica/:id" element={<CompraUnica />} />
           <Route path="perfil" element={<Perfil />} />
-          <Route path="milista" element={<Milista />} />
+          <Route path="MiLista" element={<MiLista />} />
           <Route path="editar" element={<Editar />} />
         </Route>
       </Route>

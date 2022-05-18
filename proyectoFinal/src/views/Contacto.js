@@ -1,5 +1,6 @@
 import mensaje from "./imagenes/mensaje.jpg";
 import "./Css/Css.css";
+import "./Css/Contacto.css";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 export default function Contacto() {
@@ -13,23 +14,19 @@ export default function Contacto() {
       allowOutsideClick: false,
     }).then((result) => {
       if (result.isConfirmed) {
-        navigate("/Home");
+        navigate("/Inicio");
       }
     });
   }
   return (
     <div ClassName="splitRightContainer">
-      <section
-        className="ftco-section img bg-hero h-100"
-        style={{
-          backgroundImage: `url(${mensaje})`,
-          backgroundSize: `90% 90%`,
-        }}
-      >
+      <section className="ftco-section img bg-hero h-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 text-center mb-5">
-              <h2 className="heading-section">Contact Form #10</h2>
+              <h2 className="heading-section contactanos">
+                Contacta con Nosotros!
+              </h2>
             </div>
           </div>
           <div className=" form-group ">
@@ -38,7 +35,7 @@ export default function Contacto() {
                 <div className=" row no-gutters justify-content-between">
                   <div className=" col-lg-6 d-flex align-items-stretch">
                     <div className="text-light info-wrap w-100 p-5">
-                      <h3 className="mb-4">Contact us</h3>
+                      <h3 className="mb-4">Encuentranos</h3>
 
                       <div className="dbox w-100 d-flex align-items-start">
                         <div className="icon d-flex align-items-center justify-content-center">
@@ -47,8 +44,9 @@ export default function Contacto() {
 
                         <div className="text pl-4">
                           <p>
-                            <span className="info-wrapp">Address:</span> 198
-                            West 21th Street, Suite 721 New York NY 10016
+                            <span className="info-wrapp">Address:</span>
+                            Av. de la Aurora, 25, Centro Comercial Larios
+                            Centro, 29002, Malaga
                           </p>
                         </div>
                       </div>
@@ -59,7 +57,7 @@ export default function Contacto() {
                         <div className="text pl-4">
                           <p>
                             <span className="info-wrapp">Phone:</span>{" "}
-                            <a href="tel://1234567920">+ 1235 2355 98</a>
+                            <a href="tel://1234567920">+ 661515291</a>
                           </p>
                         </div>
                       </div>
@@ -70,8 +68,8 @@ export default function Contacto() {
                         <div className="text pl-4">
                           <p>
                             <span className="info-wrapp">Email:</span>{" "}
-                            <a href="mailto:info@yoursite.com">
-                              info@yoursite.com
+                            <a href="mailto:info@trafficker1.com">
+                              Trafficker1@gmail.com
                             </a>
                           </p>
                         </div>
@@ -83,7 +81,7 @@ export default function Contacto() {
                         <div className="text pl-4">
                           <p>
                             <span className="info-wrapp">Website</span>{" "}
-                            <a href="#">yoursite.com</a>
+                            <a href="#">trafficker1.com</a>
                           </p>
                         </div>
                       </div>
@@ -91,11 +89,9 @@ export default function Contacto() {
                   </div>
                   <div className="form-group col-lg-5">
                     <div className="contact-wrap w-100 p-md-5 p-4">
-                      <h3 className="mb-4">Get in touch</h3>
+                      <h3 className="mb-4">Cuentanos...</h3>
                       <div id="form-message-warning" className="mb-4"></div>
-                      <div id="form-message-success" className="mb-4">
-                        Your message was sent, thank you!
-                      </div>
+
                       <div className=" form-group ">
                         <div className="fs-row sel req">
                           <span>
@@ -131,7 +127,7 @@ export default function Contacto() {
                               <option data-topic="topic_why_has_my_order_been_cancelled_">
                                 ¿Por qué se ha cancelado mi pedido?
                               </option>
-                              <option data-topic="topic_i_have_a_question_about_payments">
+                              <option data-topic="topic_i_have_a_question_SobreNosotros_payments">
                                 Tengo una pregunta sobre pagos
                               </option>
                               <option data-topic="topic_what_delivery_options_do_you_offer_and_how_much_does_it_cost_">
@@ -163,11 +159,11 @@ export default function Contacto() {
                               <option data-topic="topic_i_m_having_problems_on_your_website">
                                 Estoy teniendo problemas en vuestra página web
                               </option>
-                              <option data-topic="topic_how_do_i_leave_feedback_about_your_online_service_">
+                              <option data-topic="topic_how_do_i_leave_feedback_SobreNosotros_your_online_service_">
                                 ¿Cómo puedo enviar una opinión sobre el servicio
                                 online?
                               </option>
-                              <option data-topic="topic_how_do_i_leave_feedback_about_one_of_your_stores_">
+                              <option data-topic="topic_how_do_i_leave_feedback_SobreNosotros_one_of_your_stores_">
                                 ¿Cómo puedo enviar una opinión sobre una de
                                 vuestras tiendas?
                               </option>
@@ -177,7 +173,7 @@ export default function Contacto() {
                               <option data-topic="topic_how_do_i_use_my_promotion_code_">
                                 ¿Cómo canjeo un código promocional?
                               </option>
-                              <option data-topic="topic_i_have_a_question_about_giftcards">
+                              <option data-topic="topic_i_have_a_question_SobreNosotros_giftcards">
                                 Tengo una pregunta sobre las tarjetas regalo
                               </option>
                               <option data-topic="topic_do_you_have_any_job_vacancies_">
@@ -187,7 +183,10 @@ export default function Contacto() {
                                 ¿Cómo puedo contactar con vuestras oficinas
                                 centrales para oportunidades de RRPP y
                                 marketing?
-                              </option>{" "}
+                              </option>
+                              <option data-topic="topic_how_do_i_contact_your_head_office_for_pr___marketing_opportunities_">
+                                Otros
+                              </option>
                             </select>
                           </span>
                         </div>

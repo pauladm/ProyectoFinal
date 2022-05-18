@@ -46,7 +46,7 @@ export default function Comprar() {
     Swal.fire("Good job!", "You clicked the button!", "success").then(
       (result) => {
         if (result.isConfirmed) {
-          navigate("/milista");
+          navigate("/MiLista");
         }
       }
     );

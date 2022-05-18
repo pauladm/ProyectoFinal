@@ -17,6 +17,7 @@ export default function Registro() {
     lastName: "",
     email: "",
     password: "",
+    direccion: "",
   });
 
   function handleInputs(e) {
@@ -25,10 +26,9 @@ export default function Registro() {
   function handleSubmit(e) {
     e.preventDefault();
     register(user);
-    navigate("/Login2");
   }
   return (
-    <div className=" Login2 auth-wrapper">
+    <div className=" Iniciar auth-wrapper">
       <div className="auth-inner">
         <form onSubmit={handleSubmit}>
           <h3>Sign Up</h3>
@@ -97,15 +97,30 @@ export default function Registro() {
               required
             />
           </div>
+          <div className="form-group">
+            <label>direccion</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="direccion"
+              id="direccion"
+              name="direccion"
+              ref={userRef}
+              autoComplete="off"
+              onChange={handleInputs}
+              value={user.direccion}
+              required
+            />
+          </div>
 
           <button type="submit" className="btn btn-primary btn-block">
             Sign Up
           </button>
           <p className="forgot-password text-right">
-            Already registered <Link to="/Login2">sign in?</Link>
+            Already registered <Link to="/Iniciar">sign in?</Link>
           </p>
           <p className="forgot-password text-right">
-            <Link to="/home"> Continuar sin registrarse</Link>
+            <Link to="/Inicio"> Continuar sin registrarse</Link>
           </p>
         </form>
       </div>

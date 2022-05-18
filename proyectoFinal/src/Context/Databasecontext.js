@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
-
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 const DatabaseContext = createContext({
   usuarios: [],
   setUsuarios: () => {},
@@ -14,6 +15,7 @@ export const useDatabaseContext = () => {
 export default function DatabaseContextProvider({ children }) {
   const [usuarios, setUsuarios] = useState(null);
   const [errorR, setErrorR] = useState("");
+  const navigate = useNavigate();
   useEffect(function () {
     function callUsuarios() {
       let http = new XMLHttpRequest();
@@ -39,8 +41,20 @@ export default function DatabaseContextProvider({ children }) {
           `err:ER_DUP_ENTRY: Duplicate entry '${user.email}' for key 'correo_UNIQUE'`
         ) {
           setErrorR("Error, email duplicado");
+
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Email Duplicado!",
+          });
         } else {
           setErrorR("");
+          Swal.fire({
+            title: "Bienvenido!",
+            text: " completado con éxito",
+            icon: "success",
+            allowOutsideClick: false,
+          }).then((result) => navigate("/Iniciar"));
         }
       }
     };

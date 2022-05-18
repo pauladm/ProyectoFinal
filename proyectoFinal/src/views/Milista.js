@@ -63,8 +63,8 @@ export default function Milista() {
   }
   return (
     <div className="cart-container m-auto">
-      <p className="cart-title">
-        Mi<strong>Lista</strong>
+      <p className="cart-title milista">
+        <strong> Mi Lista</strong>
       </p>
 
       <table className="table text-light ">
@@ -83,14 +83,14 @@ export default function Milista() {
                 {marca.producto.map((detalle) => (
                   <p>
                     <img
-                      className=" milistafot m-auto"
+                      className=" MiListafot m-auto"
                       src={"https://" + detalle.imagen}
                     ></img>{" "}
                     {detalle.producto}
                   </p>
                 ))}
               </td>
-              <td>{marca.precio}</td>
+              <td>{marca.precio + "€"}</td>
               <td>
                 {marca.producto.map((detalle) => (
                   <p>{detalle.talla}</p>
@@ -107,7 +107,6 @@ export default function Milista() {
               </td>
 
               <td>{marca.cantidad}</td>
-              <Link to={"/carrito"}>Comprar de nuevo</Link>
             </tr>
           ))}
         </tbody>

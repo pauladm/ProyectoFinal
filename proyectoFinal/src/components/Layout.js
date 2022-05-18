@@ -12,13 +12,14 @@ import NoAccountsIcon from "@mui/icons-material/NoAccounts";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import BarraMenu from "./BarraMenu/BarraMenu";
 import "../views/Css/Css.css";
+import Milogo from "../views/imagenes/Milogo.png";
 export default function Layaout() {
   const location = useLocation();
   const navigate = useNavigate();
   const { auth, setAuth } = useAuthContext();
   function handleLogOut() {
     setAuth(null);
-    navigate("/login2");
+    navigate("/Iniciar");
   }
   function cartel() {
     document.getElementById("cartel").classList.remove("d-none");
@@ -35,13 +36,13 @@ export default function Layaout() {
     <>
       <nav className=" zeta  navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="home">
-            Inicio
+          <NavLink className="navbar-brand" to="Inicio">
+            <img className="milogo " src={Milogo}></img>
           </NavLink>
           {!auth && (
             <>
               <div
-                className="collapse navbar-collapse"
+                className="collapse navbar-collapse "
                 id="navbarNavDarkDropdown"
               >
                 <ul className="navbar-nav">
@@ -66,7 +67,7 @@ export default function Layaout() {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/login2" className="dropdown-item">
+                        <NavLink to="/Iniciar" className="dropdown-item">
                           Iniciar sesion
                         </NavLink>
                       </li>
@@ -113,13 +114,12 @@ export default function Layaout() {
                   </li>
                 </ul>
               </div>
-              <li>
-                <a>
-                  <Link to="/carrito">
-                    <ShoppingCartIcon color="primary" />
-                  </Link>
-                </a>
-              </li>
+
+              <a>
+                <Link to="/carrito">
+                  <ShoppingCartIcon color="primary" />
+                </Link>
+              </a>
             </>
           )}
         </div>
@@ -127,7 +127,7 @@ export default function Layaout() {
       <main className="App ">
         <div
           className={
-            x.pathname == "/about"
+            x.pathname == "/SobreNosotros"
               ? "d-flex justify-content-between h-90"
               : x.pathname == "/productos/Adidas"
               ? "d-flex justify-content-between h-90"
@@ -143,18 +143,30 @@ export default function Layaout() {
               ? "d-flex justify-content-between h-90"
               : x.pathname == "/productos/man"
               ? "d-flex justify-content-between h-90"
-              : x.pathname == "/productos/woman"
+              : x.pathname == "/productos/girl"
               ? "d-flex justify-content-between h-90"
-              : x.pathname == "/Login2"
-              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/Iniciar"
+              ? "d-flex justify-content-between h-100"
               : x.pathname == "/para-ti"
               ? "d-flex justify-content-between h-90"
               : x.pathname == "/Registro"
-              ? "d-flex justify-content-between h-90"
+              ? "d-flex justify-content-between h-100"
               : x.pathname == "/carrito"
               ? "d-flex justify-content-between h-100"
-              : x.pathname == "/home"
+              : x.pathname == "/productos/swimwear"
               ? "d-flex justify-content-between h-90"
+              : x.pathname == "/productos/shorts"
+              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/productos/Sneaker"
+              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/productos/Hoddies"
+              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/productos/T-shirts"
+              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/Inicio"
+              ? "d-flex justify-content-between h-90"
+              : x.pathname == "/MiLista"
+              ? "d-flex justify-content-between h-100"
               : "d-flex justify-content-between h-100"
           }
         >

@@ -28,11 +28,11 @@ export default function Perfil() {
                   <li class="nav-item">
                     <a
                       class="nav-link active"
-                      id="home-tab"
+                      id="Inicio-tab"
                       data-toggle="tab"
-                      href="#home"
+                      href="#Inicio"
                       role="tab"
-                      aria-controls="home"
+                      aria-controls="Inicio"
                       aria-selected="true"
                     >
                       Mi perfil
@@ -55,7 +55,7 @@ export default function Perfil() {
           <div class="row">
             <div class="col-md-4">
               <div class="profile-work">
-                <Link to="/Milista">Mi lista </Link>
+                <Link to="/MiLista">Mi lista </Link>
 
                 <br />
               </div>
@@ -64,9 +64,9 @@ export default function Perfil() {
               <div class="tab-content profile-tab" id="myTabContent">
                 <div
                   class="tab-pane fade show active"
-                  id="home"
+                  id="Inicio"
                   role="tabpanel"
-                  aria-labelledby="home-tab"
+                  aria-labelledby="Inicio-tab"
                 >
                   <div class="row">
                     <div class="col-md-6">

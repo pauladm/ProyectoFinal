@@ -102,7 +102,7 @@ export default function Producto() {
   }
 
   return (
-    <div className="m-auto h-100 bg-primary w-100">
+    <div className="m-auto h-100  w-100">
       <div className="left">
         <img
           className="img1"
@@ -125,36 +125,12 @@ export default function Producto() {
             <h2 className="h33"> {productosMarcas.gender}</h2>
             <h4 className="h44">
               <span className="fa fa-dollar"></span>
-              {productosMarcas.price.current.value}
+              {productosMarcas.price.current.value + "  €"}
             </h4>
-            <ul className="ull">
-              <li className="h33">
-                COLOR:{"  "}
-                {productosMarcas.variants[0].colour}
-              </li>
-            </ul>
-
-            <button
-              onClick={() => tallaselect()}
-              className="fa fa-shopping-bag btn4 enlace1"
-            >
-              Selecciona tu talla
-            </button>
+            <br />
+            <h4 className="h44">Color: {productosMarcas.variants[0].colour}</h4>
           </div>
 
-          <button
-            onClick={() =>
-              addCart(
-                productosMarcas.name,
-                productosMarcas.price.current.value,
-                productosMarcas.media.images[0].url,
-                productosMarcas.id
-              )
-            }
-            className="enlace1"
-          >
-            Comprar
-          </button>
           <span className="foot">
             {!auth ? (
               <div id="eliminar">
@@ -163,8 +139,7 @@ export default function Producto() {
                   class="alert alert-warning d-flex alert-dismissible fade show"
                   role="alert"
                 >
-                  <Link className="enlace1" to={"/Login2"}>
-                    {" "}
+                  <Link className="enlace1" to={"/Iniciar"}>
                     debes estar registrado para comprar !
                   </Link>
 
@@ -178,7 +153,27 @@ export default function Producto() {
                 </div>
               </div>
             ) : (
-              <></>
+              <>
+                <button
+                  onClick={() => tallaselect()}
+                  className="fa fa-shopping-bag btn4 enlace1"
+                >
+                  Selecciona tu talla
+                </button>
+                <button
+                  onClick={() =>
+                    addCart(
+                      productosMarcas.name,
+                      productosMarcas.price.current.value,
+                      productosMarcas.media.images[0].url,
+                      productosMarcas.id
+                    )
+                  }
+                  className="enlace1"
+                >
+                  Comprar
+                </button>
+              </>
             )}
           </span>
         </div>

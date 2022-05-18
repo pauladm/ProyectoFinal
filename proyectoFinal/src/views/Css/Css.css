@@ -13,6 +13,37 @@ background-image: url("../imagenes/lifeneon.jpg") !important;
 .zeta{
   z-index:3 
 }
+.banner1{
+  width: 100%;
+height: 405px;
+}
+
+.logossV{
+  margin: 5px;
+  width: 27%;
+  height: 40%;
+  display: inline-block;
+
+}
+.logossA{
+  margin: 5px;
+  width: 13%;
+  height: 40%;
+  display: inline-block;
+
+}
+.logossCK{
+  margin: 60px;
+  width: 10%;
+  height: 10%;
+  display: inline-block;}
+.logoss{
+ margin: 5px;
+    width: 15%;
+    height: 40%;
+    display: inline-block;
+
+}
   .footer {
     background-color: black;
     display: flex;
@@ -199,7 +230,9 @@ background-position: center;
 :root {
   --jumbotron-padding-y: 3rem;
 }
-
+.milista{
+  color: rgb(255, 255, 255);
+}
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -224,7 +257,10 @@ background-position: center;
 .jumbotron .container {
   max-width: 40rem;
 }
-
+.traff{
+  font-size: 90px;
+  color:antiquewhite ;
+}
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -233,10 +269,14 @@ footer {
   margin: 0;
   width: 0;
 }
+.milogo{
+  width: 100px;
+ padding-top: 25px;
+}
 footer p {
   margin-bottom: .25rem;
 }
-.milistafot:hover{
+.MiListafot:hover{
 
   transform: scale(3.3);
 }
@@ -247,10 +287,10 @@ footer p {
   font-family: 'Tapestry', cursive;
 }
 
-.milistafot{
+.MiListafot{
   transition: transform 300ms;
   
-  width: 20px;
+  width: 23px;
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }

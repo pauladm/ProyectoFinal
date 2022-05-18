@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <h1 className="text-center">Bienvenido a 15ce Sport</h1>
+      <h1 className="text-center traff">Trafficker 1</h1>
 
       <Datos />
     </div>

@@ -1,13 +1,13 @@
 import "./Css/producto.css";
 import { useEffect, useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
-import gorraa from "./imagenes/gorraa.jpg";
+import { Navigate, useNavigate, Link, useParams } from "react-router-dom";
+import bañadorCck from "./imagenes/bañadorCck.jpg";
 import shortnike from "./imagenes/shortnike.jpg";
 import camisetas from "./imagenes/camisetas.jpg";
 import sudaderack from "./imagenes/sudaderack.jpg";
 import tenis from "./imagenes/tenis.jpg";
 import jeans from "./imagenes/jeans.jpg";
-export default function Parati() {
+export default function ParaTi() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [productosMarcas, setProductosMarcas] = useState(null);
@@ -73,7 +73,7 @@ export default function Parati() {
           <div className="row">
             <div className="col-lg-4 col-md-12 mb-44">
               <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-                <img src={`${gorraa}`} className="w-100" />
+                <img src={`${bañadorCck}`} className="w-100" />
                 <a href="#!">
                   <div
                     className="mask"
@@ -82,15 +82,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            onClick={AddCheck()}
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="cap+"
-                            id="gorrach"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("cap")}>Gorra</span>
+                          <Link to={`/productos/swimwear`} class="">
+                            Bañadores
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -116,16 +110,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="shorts+"
-                            id="defaultCheck1"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("shorts")}>
+                          <Link to={`/productos/shorts`} class="">
                             Pantalones cortos
-                          </span>
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -151,16 +138,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="hoddies+"
-                            id="defaultCheck1"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("hoddies")}>
+                          <Link to={`/productos/Hoddies`} class="">
                             Sudaderas
-                          </span>
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -188,16 +168,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="t-shirt+"
-                            id="defaultCheck1"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("t-shirt")}>
-                            Camisetas
-                          </span>
+                          <Link to={`/productos/T-shirts`} class="">
+                            camisetas
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -223,14 +196,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="sneakers+"
-                            id="defaultCheck1"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("sneaker")}>tenis</span>
+                          <Link to={`/productos/Sneaker`} class="">
+                            Tenis
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -256,14 +224,9 @@ export default function Parati() {
                     <div className="d-flex justify-content-start align-items-start h-100">
                       <h5>
                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark d-inline">
-                          <input
-                            class=" mx-1 form-check-input"
-                            type="checkbox"
-                            value="jeans+"
-                            id="defaultCheck1"
-                            onChange={handleCheck}
-                          />
-                          <span className={isChecked("jeans")}>Vaqueros</span>
+                          <Link to={`/productos/jeans`} class="">
+                            Vaqueros
+                          </Link>
                         </span>
                       </h5>
                     </div>
@@ -278,7 +241,6 @@ export default function Parati() {
               </div>
             </div>
           </div>
-          <button>ENVIAR</button>
         </form>
       </div>
     </section>

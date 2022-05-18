@@ -1,3 +1,3 @@
 export default function Error() {
-  return <h1>error</h1>;
+  return <h1 className="error1 m-auto">error</h1>;
 }

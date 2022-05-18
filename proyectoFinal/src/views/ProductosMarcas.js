@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { List, ListItem } from "@chakra-ui/react";
 import { useParams, Link } from "react-router-dom";
 import "./Css/producto.css";
-import usePagination from "../components/paginacion/Paginacion";
+import usePagination from "../components/Paginacion/Paginacion";
 import * as React from "react";
 
 import Pagination from "@mui/material/Pagination";

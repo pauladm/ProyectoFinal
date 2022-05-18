@@ -40,7 +40,7 @@ app.post("/carritounico", function (req, res) {
     }
   );
 });
-app.post("/Milista", function (req, res) {
+app.post("/MiLista", function (req, res) {
   let connection = conectar();
   console.log(req.body);
   let id_usuario = req.body.id_usuario;
@@ -103,24 +103,6 @@ app.post("/userupdate", function (req, res) {
   );
 });
 
-app.post("/insertusuarios", function (req, res) {
-  let connection = conectar();
-  console.log(req.body);
-  let name = req.body.name;
-  let lastName = req.body.lastName;
-  let email = req.body.email;
-  let password = req.body.password;
-  connection.query(
-    "insert into usuarios(usuarios,lastName,correo,password) values(?,?,?,?)",
-    [name, lastName, email, password],
-    function (err, results) {
-      if (err) {
-        res.send("err:" + err.message);
-      } else res.send("usuario insertado");
-    }
-  );
-});
-
 app.post("/deleteCart", function (req, res) {
   let connection = conectar();
   console.log(req.body);
@@ -145,9 +127,10 @@ app.post("/insertusuarios", function (req, res) {
   let lastName = req.body.lastName;
   let email = req.body.email;
   let password = req.body.password;
+  let direccion = req.body.direccion;
   connection.query(
-    "insert into usuarios(usuarios,lastName,correo,password) values(?,?,?,?)",
-    [name, lastName, email, password],
+    "insert into usuarios(usuarios,lastName,correo,password,direccion) values(?,?,?,?,?)",
+    [name, lastName, email, password, direccion],
     function (err, results) {
       if (err) {
         res.send("err:" + err.message);

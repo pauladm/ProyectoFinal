@@ -135,10 +135,10 @@
       display: inline-block;
       padding-right: 5px;
   }
-  a[href*="#home"]::before {
+  a[href*="#Inicio"]::before {
     content: "\f015" !important;
   }
-  a[href*="#about"]::before {
+  a[href*="#SobreNosotros"]::before {
     content: "\f129" !important;
   }
   a[href*="#events"]::before {
@@ -305,10 +305,10 @@
     display: inline-block;
     padding-right: 5px;
 }
-a[href*="#home"]::before {
+a[href*="#Inicio"]::before {
   content: "\f015" !important;
 }
-a[href*="#about"]::before {
+a[href*="#SobreNosotros"]::before {
   content: "\f129" !important;
 }
 a[href*="#events"]::before {

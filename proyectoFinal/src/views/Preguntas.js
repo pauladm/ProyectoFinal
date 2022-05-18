@@ -104,38 +104,38 @@ export default function Preguntas() {
         >
           <div class="accordion-body bg-light">
             <p>
-              Para ver el estado de tu pedido entra en:
-              www.jdsports.es/track-my-order/ e indica el número de tu pedido y
-              el e-mail o código postal que has utilizado para realizar la
-              compra. También puedes revisar el estado de tu pedido en tu
-              cuenta, o en el correo que recibirás cuando se envíe tu pedido. Si
-              no has recibido tu pedido o quieres más información, ponte en
-              contacto con nuestro servicio de Atención al cliente e indícales
-              tu número de pedido. Estamos trabajando con nuestros mensajeros
-              para asegurar que llegue tu pedido lo antes posible. Muchos de
-              nuestros pedidos vienen desde Reino Unido, por lo que debemos
-              ajustarnos a los nuevos procesos de aduanas. Los pedidos enviados
-              a la península no tendrán ningún coste extra, ya que nosotros nos
-              haremos cargo de la tasa de aduanas. Puedes localizar tu pedido
-              aquí una vez haya salido del centro de distribución. Agradecemos
-              tu paciencia y fidelidad. Envío a domicilio estándar: El plazo de
-              entrega suele ser de 6 a 10 días laborables. De 6 a 12 días
-              laborables para las Islas Canarias. En caso de haber solicitado el
-              envío a domicilio, pregunta a tus vecinos por si acaso alguno de
-              ellos ha recogido el paquete por ti. Recogida en tienda: El plazo
-              de entrega suele ser de 6 a 10 días laborables, y de 6 a 12 días
-              laborables para envíos a tiendas de las Islas Canarias. Si has
-              solicitado la recogida en tienda y ha pasado el tiempo previsto,
-              puedes llamar para preguntar. Productos personalizados: En
-              cualquier modalidad de envío, al plazo de entrega correspondiente
-              se le deberá añadir el tiempo de preparación, que puede llegar a
-              ser de hasta 5 días adicionales. Productos Partner (productos que
-              se envían directamente desde los almacenes de adidas, Nike o
-              Reebok al cliente de JD): El plazo de entrega para productos de
-              adidas y Reebok suele ser de 3 - 5 días laborables, y para
-              productos de Nike de 2 - 4 días laborables. Este servicio solo
-              está disponible para el envío estándar a domicilio y están
-              excluidas Las Islas Canarias, Ceuta y Melilla.
+              Para ver el estado de tu pedido entra en: www.Trafficker
+              1.es/track-my-order/ e indica el número de tu pedido y el e-mail o
+              código postal que has utilizado para realizar la compra. También
+              puedes revisar el estado de tu pedido en tu cuenta, o en el correo
+              que recibirás cuando se envíe tu pedido. Si no has recibido tu
+              pedido o quieres más información, ponte en contacto con nuestro
+              servicio de Atención al cliente e indícales tu número de pedido.
+              Estamos trabajando con nuestros mensajeros para asegurar que
+              llegue tu pedido lo antes posible. Muchos de nuestros pedidos
+              vienen desde Reino Unido, por lo que debemos ajustarnos a los
+              nuevos procesos de aduanas. Los pedidos enviados a la península no
+              tendrán ningún coste extra, ya que nosotros nos haremos cargo de
+              la tasa de aduanas. Puedes localizar tu pedido aquí una vez haya
+              salido del centro de distribución. Agradecemos tu paciencia y
+              fidelidad. Envío a domicilio estándar: El plazo de entrega suele
+              ser de 6 a 10 días laborables. De 6 a 12 días laborables para las
+              Islas Canarias. En caso de haber solicitado el envío a domicilio,
+              pregunta a tus vecinos por si acaso alguno de ellos ha recogido el
+              paquete por ti. Recogida en tienda: El plazo de entrega suele ser
+              de 6 a 10 días laborables, y de 6 a 12 días laborables para envíos
+              a tiendas de las Islas Canarias. Si has solicitado la recogida en
+              tienda y ha pasado el tiempo previsto, puedes llamar para
+              preguntar. Productos personalizados: En cualquier modalidad de
+              envío, al plazo de entrega correspondiente se le deberá añadir el
+              tiempo de preparación, que puede llegar a ser de hasta 5 días
+              adicionales. Productos Partner (productos que se envían
+              directamente desde los almacenes de adidas, Nike o Reebok al
+              cliente de JD): El plazo de entrega para productos de adidas y
+              Reebok suele ser de 3 - 5 días laborables, y para productos de
+              Nike de 2 - 4 días laborables. Este servicio solo está disponible
+              para el envío estándar a domicilio y están excluidas Las Islas
+              Canarias, Ceuta y Melilla.
             </p>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function Preguntas() {
                 utilizar cualquiera de las siguientes formas para ponerte en
                 contacto con nosotros: Contacto Rellena nuestro formulario de
                 atención al cliente Email Nuestro correo electrónico es
-                soporte.online@jdsports.es Redes sociales También puedes
+                soporte.online@Trafficker 1.es Redes sociales También puedes
                 resolver tus dudas escribiéndonos en nuestras redes sociales.
               </p>
             </div>

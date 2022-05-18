@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 import $ from "jquery";
 import Carga from "./Carga";
-export default function Compraunica() {
+export default function CompraUnica() {
   const navigate = useNavigate();
   const [carrito, setCarrito] = useState(null);
   const { id } = useParams();
@@ -47,7 +47,7 @@ export default function Compraunica() {
     Swal.fire("Good job!", "You clicked the button!", "success").then(
       (result) => {
         if (result.isConfirmed) {
-          navigate("/milista");
+          navigate("/MiLista");
         }
       }
     );

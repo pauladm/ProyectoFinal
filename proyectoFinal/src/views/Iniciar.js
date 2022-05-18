@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useAuthContext } from "../Context/AuthContext";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import "./Css/Css.css";
-export default function Login2() {
+export default function Iniciar() {
   const { login, errorMessage } = useAuthContext();
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,17 +21,17 @@ export default function Login2() {
     let x = login(user);
     setUser({ email: "", password: "" });
     if (x) {
-      navigate("/home");
-    } else navigate("/Login2");
+      navigate("/Inicio");
+    } else navigate("/Iniciar");
   }
   return (
-    <div className=" Login2 auth-wrapper">
+    <div className=" Iniciar auth-wrapper">
       <div className="auth-inner">
         <form onSubmit={handleSubmit}>
-          <h3>Sign In</h3>
+          <h3>Iniciar sesion</h3>
 
           <div className="form-group">
-            <label>Email address</label>
+            <label>Correo Electronico</label>
             <input
               className="form-control"
               type="text"
@@ -46,7 +46,7 @@ export default function Login2() {
           </div>
 
           <div className="form-group">
-            <label>Password</label>
+            <label>Contraseña</label>
             <input
               className="form-control"
               type="password"
@@ -66,24 +66,21 @@ export default function Login2() {
                 id="customCheck1"
               />
               <label className="custom-control-label" htmlFor="customCheck1">
-                Remember me
+                Recuerdame!
               </label>
             </div>
           </div>
 
           <button type="submit" className="btn btn-primary btn-block">
-            Submit
+            Entrar
           </button>
-          <p className="forgot-password text-right">
-            Forgot <a href="#">password?</a>
-          </p>
 
           <p className="forgot-password text-right">
             Todavia no estas registrado?
-            <Link to="/Registro">registrate</Link>
+            <Link to="/Registro">Registrate</Link>
           </p>
           <p className="forgot-password text-right">
-            <Link to="/home"> </Link>
+            <Link to="/Inicio"> </Link>
           </p>
         </form>
       </div>

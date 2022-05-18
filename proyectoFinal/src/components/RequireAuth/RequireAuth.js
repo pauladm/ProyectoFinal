@@ -6,6 +6,6 @@ export default function RequireAuth() {
   return auth ? (
     <Outlet />
   ) : (
-    <Navigate to="/Login2" state={{ from: location }} replace></Navigate>
+    <Navigate to="/Iniciar" state={{ from: location }} replace></Navigate>
   );
 }

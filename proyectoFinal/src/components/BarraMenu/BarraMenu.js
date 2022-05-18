@@ -17,7 +17,7 @@ export default function BarraMenu() {
           <>
             <div className="sidebar-header">
               <div className="sidebar-brand">
-                <a href="#">ANIMATE</a>
+                <a href="#"></a>
               </div>
             </div>
 
@@ -104,9 +104,7 @@ export default function BarraMenu() {
         ) : (
           <>
             <div className="sidebar-header">
-              <div className="sidebar-brand">
-                <a href="#">ANIMATE</a>
-              </div>
+              <div className="sidebar-brand"></div>
             </div>
 
             <li>

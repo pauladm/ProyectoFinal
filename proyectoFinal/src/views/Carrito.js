@@ -52,8 +52,8 @@ export default function Carrito() {
   }
   return (
     <div className="cart-container m-auto">
-      <p className="cart-title">
-        Your <strong>Cart</strong>
+      <p className="cart-title text-light">
+        <strong> Mi Carrito </strong>
       </p>
 
       <table className="table text-light ">
@@ -89,7 +89,7 @@ export default function Carrito() {
                 </button>
               </td>
               <td>{marca.cantidad}</td>
-              <Link to={`/compraunica/${marca.id}`}>Comprar</Link>
+              <Link to={`/CompraUnica/${marca.id}`}>Comprar</Link>
             </tr>
           ))}
         </tbody>

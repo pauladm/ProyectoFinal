@@ -7,6 +7,13 @@ import pantalones from "./images/pantalones.jpg";
 import chico from "../../views/imagenes/chico.jpg";
 import chica from "../../views/imagenes/chica.jpg";
 import trabimg from "../../views/imagenes/trabimg.jpg";
+import banner11 from "../../views/imagenes/banner11.png";
+import nikelogo from "../../views/imagenes/nikelogo.png";
+import filalogo from "../../views/imagenes/filalogo.jpg";
+import VansLogo from "../../views/imagenes/VansLogo.png";
+import Cklogo from "../../views/imagenes/Cklogo.png";
+import AdidasLogo from "../../views/imagenes/AdidasLogo.png";
+
 //import { Link } from "react-router-dom";
 export default function Datos() {
   const [datos, setDatos] = useState([]);
@@ -37,7 +44,7 @@ export default function Datos() {
   }
   let x = "https://";
   return (
-    <>
+    /* <>
       <div
         id="carouselExampleCaptions"
         className="carousel slide  m-auto w-50 car "
@@ -122,318 +129,139 @@ export default function Datos() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
-      <div class="album py-5 ">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  style={{ height: "100%", width: "100%", display: "block" }}
-                  src={chico}
-                  data-holder-rendered="true"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group mx-auto">
-                      <Link
-                        to={`/productos/man`}
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Ropa de Hombre
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src={chica}
-                  data-holder-rendered="true"
-                  style={{ height: "100%", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group mx-auto">
-                      <Link
-                        to={`/productos/woman`}
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Ropa mujer
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src={trabimg}
-                  data-holder-rendered="true"
-                  style={{ height: "100%", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group mx-auto">
-                      <Link
-                        to={`/productos/accessory`}
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Accesorios Hombre y mujer
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b1%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b1%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b2%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b2%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b3%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b3%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class=" marco card-img-top"
-                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                  alt="Thumbnail [100%x225]"
-                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_180b28732b3%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_180b28732b3%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.93124771118164%22%20y%3D%22118.04000034332276%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                  data-holder-rendered="true"
-                  style={{ height: "225px", width: "100%", display: "block" }}
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
+      </div>*/
+    <div class="album py-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="marco card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                style={{ height: "100%", width: "100%", display: "block" }}
+                src={chico}
+                data-holder-rendered="true"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Las mejores marcas de moda deportiva y urbana se reúnen aquí
+                  para que puedas ver todas las novedades disponibles en un
+                  único lugar. La ropa de marca en su vertiente más sport y
+                  streetwear también está disponible en esta colección de hombre
+                  de Trafficker 1 Sports
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <Link
+                      to={`/productos/man`}
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Ropa de Hombre
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="marco card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src={chica}
+                data-holder-rendered="true"
+                style={{ height: "100%", width: "100%", display: "block" }}
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  En Trafficker 1 somos expertos en moda urbana y deportiva. Es
+                  por eso que en la colección de ropa de mujer solo encontrarás
+                  lo mejor de las mejores marcas, tanto las más famosas y
+                  clásicas del mercado como las más recientes que están dando
+                  que hablar.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <Link
+                      to={`/productos/girl`}
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Ropa mujer
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class=" marco card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src={trabimg}
+                data-holder-rendered="true"
+                style={{ height: "100%", width: "100%", display: "block" }}
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Mochilas, guantes, bolsas de deporte... completa ya tus
+                  ‘outfits’ con lo mejor de Fila, Nike y adidas Originals entre
+                  otras. Y es que Trafficker 1 no es solo moda deportiva.
+                  Encuentra también una gran variedad de accesorios y no pierdas
+                  ese toque especial que te hará destacar entre la multitud.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <Link
+                      to={`/productos/accessory`}
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Accesorios Hombre y mujer
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img className="banner1 my-5" src={banner11}></img>
+          </div>
+
+          <div className="Logoss my-5">
+            <ul>
+              <li className="logoss">
+                <Link to="/productos/Nike">
+                  <img src={nikelogo} />
+                </Link>
+              </li>
+              <li className="logoss">
+                <Link to="/productos/Fila">
+                  <img src={filalogo} />
+                </Link>
+              </li>
+              <li className="logossV">
+                <Link to="/productos/Vans">
+                  <img src={VansLogo} />
+                </Link>
+              </li>
+              <li className="logossA">
+                <Link to="/productos/Adidas">
+                  <img src={AdidasLogo} />
+                </Link>
+              </li>
+              <li className="logossCK">
+                <Link to="/productos/Calvin%20Klein">
+                  <img src={Cklogo} />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </>
+    </div>
+    //</>
   );
 }
